@@ -74,4 +74,8 @@ Route::group(['as' => $as, 'middleware' => ['auth', 'permission:ADMIN_PANEL']], 
 	/* ================== Blocks ================== */
 	Route::resource(config('laraadmin.adminRoute') . '/blocks', 'LA\BlocksController');
 	Route::get(config('laraadmin.adminRoute') . '/block_dt_ajax', 'LA\BlocksController@dtajax');
+
+	/* ================== Flats ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/flats', 'LA\FlatsController');
+	Route::get(config('laraadmin.adminRoute') . '/flat_dt_ajax', 'LA\FlatsController@dtajax');
 });
