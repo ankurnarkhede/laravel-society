@@ -82,4 +82,16 @@ Route::group(['as' => $as, 'middleware' => ['auth', 'permission:ADMIN_PANEL']], 
 	/* ================== Notices ================== */
 	Route::resource(config('laraadmin.adminRoute') . '/notices', 'LA\NoticesController');
 	Route::get(config('laraadmin.adminRoute') . '/notice_dt_ajax', 'LA\NoticesController@dtajax');
+
+	/* ================== Rents ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/rents', 'LA\RentsController');
+	Route::get(config('laraadmin.adminRoute') . '/rent_dt_ajax', 'LA\RentsController@dtajax');
+
+	/* ================== Rents ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/rents', 'LA\RentsController');
+	Route::get(config('laraadmin.adminRoute') . '/rent_dt_ajax', 'LA\RentsController@dtajax');
+
+	/* ================== Rents ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/rents', 'LA\RentsController');
+	Route::get(config('laraadmin.adminRoute') . '/rent_dt_ajax', 'LA\RentsController@dtajax');
 });
