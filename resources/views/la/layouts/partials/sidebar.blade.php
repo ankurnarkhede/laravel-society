@@ -6,7 +6,7 @@
 
         <!-- Sidebar user panel (optional) -->
         @if (! Auth::guest())
-            <div class="user-panel">
+            <div class="user-panel" style="height: 10% !important;">
                 <div class="pull-left image">
                     <img src="{{ Gravatar::fallback(asset('la-assets/img/user2-160x160.jpg'))->get(Auth::user()->email) }}" class="img-circle" alt="User Image" />
                 </div>
