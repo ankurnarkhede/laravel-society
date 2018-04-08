@@ -78,4 +78,8 @@ Route::group(['as' => $as, 'middleware' => ['auth', 'permission:ADMIN_PANEL']], 
 	/* ================== Flats ================== */
 	Route::resource(config('laraadmin.adminRoute') . '/flats', 'LA\FlatsController');
 	Route::get(config('laraadmin.adminRoute') . '/flat_dt_ajax', 'LA\FlatsController@dtajax');
+
+	/* ================== Notices ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/notices', 'LA\NoticesController');
+	Route::get(config('laraadmin.adminRoute') . '/notice_dt_ajax', 'LA\NoticesController@dtajax');
 });
