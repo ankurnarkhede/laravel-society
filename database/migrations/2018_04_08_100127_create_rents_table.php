@@ -28,13 +28,14 @@ class CreateRentsTable extends Migration
 
             ["flat_number",        "Flat Number",         "Name",     false, null,  1,  250,    true],
             ["block",     "Block",      "Dropdown",  false, "",          0,  1000,   true, "@blocks"],
-            ["owner_name",        "Owner",         "Name",     false, 'Owner',  1,  250,    true, "@users"],
+            ["owner_name",        "Owner",         "Drpodown",     false, 'Owner',  1,  250,    true, "@users"],
             ["rent",        "Rent (in INR)",         "Name",     false, null,  1,  250,    true],
             ["members",       "Maximum no. of Members",        "Integer",  false, 0,           0,  20,   false],
             ["phone",      "Phone",       "Mobile",   false, "", 0, 20,false],
             ["email",       "Email",        "Email",    false, "",          0,  50,      false],
             ["status",      "Status",       "Radio",    false, "Active", 0,  0,      true, ["Active","Inactive"]],
             ["remark", "Remarks", "Textarea",false, "",          5,  1000,    false],
+
 
 
         ]);
